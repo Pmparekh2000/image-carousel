@@ -35,6 +35,7 @@ const ImageCarousel = () => {
 
         return () => {
             clearInterval(timerRef.current)
+            timerRef.current = null;
         };
 
     }, [imagesData]);
